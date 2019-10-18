@@ -1,0 +1,10 @@
+
+<div *ngIf="validate() <= 7 ; else no">
+  <h1 class="size green" >YES</h1>
+  <div *ngIf="validate() == 1 ; else days">Next class will be in tomorrow.</div>
+  <ng-template #days>Next class will be in {{validate()}} days.</ng-template>
+</div>
+<ng-template class="font" #no>
+  <h1 class="size red" >NO</h1>
+  Next class will be in {{validate()}} days.
+</ng-template>

@@ -1,1 +1,1 @@
-<?php include_once("./dist/is-there-sds-next-week/index.html"); ?>
+<?php include_once("index.html"); ?>
